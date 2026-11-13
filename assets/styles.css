@@ -8,3 +8,33 @@
 @media(max-width:420px){body{font-size:16px}.container{width:calc(100% - 32px)}.brand{font-size:1.23rem;gap:10px}.brand-symbol{width:38px;height:40px;padding:7px 6px}.brand small{font-size:.55rem}.header-inner{gap:15px}.nav-toggle{padding:8px 10px;font-size:.8rem}.hero-copy h1{font-size:clamp(2.6rem,10.3vw,3.25rem)}.hero-copy .eyebrow{font-size:.59rem;letter-spacing:.1em}.hero-copy .actions{gap:17px}.hero-copy .lead{font-size:.96rem}.hero-art{aspect-ratio:1.09}.art-tag{font-size:.65rem}.art-caption{left:13px;right:13px;bottom:13px;padding:12px;gap:10px}.art-caption .icon-box{width:35px;height:35px}.art-caption strong{font-size:.72rem}.art-caption span:not(.icon-box){font-size:.61rem}.quick-strip{display:grid;grid-template-columns:1fr;gap:11px}.quick-strip>span:first-child{margin-bottom:2px}.section{padding-top:52px;padding-bottom:52px}.section-heading h2,h2{font-size:1.95rem}.module-grid,.module-grid.four{grid-template-columns:1fr}.module-card{padding:24px}.module-card h3{font-size:1.15rem;margin-top:17px}.module-card p,.module-grid.four p{font-size:.87rem}.module-grid.four h3{font-size:1.13rem}.workflow-section{padding:49px 0}.workflow-grid{gap:30px}.steps li{gap:15px}.steps h3{font-size:1.05rem}.steps p{font-size:.84rem}.cta{padding:29px 24px}.cta h2{font-size:1.9rem}.cta .eyebrow{font-size:.61rem}.footer-grid{grid-template-columns:1fr;gap:29px}.footer-grid>div:first-child{grid-column:auto}.footer-grid>div>a:not(.brand),.footer-grid>div>span{font-size:.77rem}.footer-bottom{font-size:.64rem}.page-hero{padding-top:38px;padding-bottom:35px}.page-hero h1{font-size:clamp(2.2rem,9vw,3rem)}.page-hero .lead{font-size:.94rem}.how-grid{grid-template-columns:1fr;gap:25px}.how-number{margin-bottom:12px}.how-grid h3{font-size:1.15rem;margin-bottom:10px}.how-grid p{font-size:.87rem}.scope-grid>article{padding:25px 23px}.scope-section h2{font-size:1.9rem}.scope-bottom .button{font-size:.78rem;padding:13px 15px}.form-card{padding:24px 20px}.two-fields{grid-template-columns:1fr;gap:0}.empty-card{padding:27px 23px}.empty-card h2{font-size:1.5rem}.empty-card .button{font-size:.8rem;padding:13px 16px}.context-card{padding:18px;gap:13px}.context-card>.icon-box{display:none}.context-card h2{font-size:1.3rem}.form-card h2{font-size:1.5rem}.form-card .button{font-size:.81rem;padding:13px 16px}.form-card .pill{font-size:.6rem}.result-card{padding:25px 22px}.result-card .button{width:100%;font-size:.8rem}.result-card .actions{gap:12px}.summary-box{font-size:.71rem;padding:15px}.contact-info h2{font-size:1.85rem}.contact-email{font-size:.88rem}.section-small{padding-bottom:52px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.button:hover{transform:none}}
 @media print{body{background:white;color:#111;font-size:11pt}.container{width:100%}.site-header,.site-footer,.nav-toggle,.button,.hero-art,.configured-links{display:none!important}.section,.section-small,.page-hero,.workflow-section,.scope-section{padding:20px 0}.hero-grid,.section-heading,.workflow-grid,.split-content,.scope-grid,.portal-layout,.contact-layout{display:block}.module-grid,.module-grid.four,.role-grid,.how-grid{grid-template-columns:1fr 1fr}.scope-section,.scope-grid>article{background:white;color:#111}.scope-grid>article{border:1px solid #aaa}.scope-label,.check-list li,.scope-bottom p{color:#333}.scope-grid>article,.module-card,.form-card,.result-card{break-inside:avoid}.hero-copy h1,.page-hero h1{font-size:30pt}.summary-box{white-space:pre-wrap}.faq-list details>*{display:block}.scope-bottom{border-color:#aaa}.cta-wrap{display:none}}
+
+/* Identidad visual renovada · Conjunto PH */
+:root{--ink:#18323a;--blue:#176b68;--blue-dark:#105451;--muted:#5b6f70;--line:#dbe4df;--ice:#edf3ef;--mint:#dcebe1;--paper:#fbfaf6}
+h1 span{color:#176b68}
+.site-header{background:rgba(251,250,246,.96);backdrop-filter:blur(14px)}
+.brand-symbol{background:#176b68;border-radius:12px}
+.brand-ph{color:#176b68}
+.button{background:#176b68;border-color:#176b68;border-radius:10px}
+.button:hover{background:#105451;border-color:#105451}
+.text-link,.more-link{color:#176b68}
+.icon-box{background:#e5efeb;color:#176b68}
+.icon-box.mint{background:#dcebe1;color:#315f4b}
+.home-hero{background:linear-gradient(125deg,#f0f4ef 0%,#fbfaf6 65%,#f3eee4 100%)}
+.hero-grid{padding-top:78px;padding-bottom:72px;gap:64px}
+.hero-copy h1{font-size:clamp(3rem,5.4vw,5rem);letter-spacing:-.055em}
+.hero-art{aspect-ratio:1.12;border-radius:26px;background:#dce8e0;box-shadow:0 24px 60px rgba(24,50,58,.13)}
+.hero-art>img{object-position:center}
+.art-tag{color:#244d4b}
+.art-caption{border-radius:14px;box-shadow:0 16px 38px rgba(24,50,58,.14)}
+.quick-strip svg{color:#47816a}
+.module-card{border-radius:17px;box-shadow:0 5px 20px rgba(24,50,58,.035);transition:transform .2s,box-shadow .2s}
+.module-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(24,50,58,.08)}
+.workflow-section{background:#edf3ef}
+.steps>li>span{color:#176b68}
+.role-grid article{border-color:#b18a58}
+.cta{background:linear-gradient(115deg,#173d43,#176b68);box-shadow:0 20px 45px rgba(24,50,58,.15)}
+.scope-section{background:#18343b}
+.scope-grid>article{background:#21434a;border-color:#49676a}
+.scope-label{color:#d8c39a}
+@media(max-width:650px){.hero-grid{padding-top:42px;padding-bottom:42px;gap:30px}.hero-art{aspect-ratio:1.28}}
