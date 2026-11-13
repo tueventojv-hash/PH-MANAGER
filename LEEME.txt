@@ -1,0 +1,74 @@
+CONJUNTO PH · JULIO ALEJANDRO VALENCIA GARCIA
+Colombia · tueventojv@gmail.com
+
+ABRIR Y USAR
+1. Descomprime la carpeta completa.
+2. Abre index.html con un navegador moderno y entra en Abrir panel.
+3. Crea una copropiedad y selecciónala. Registra sus viviendas.
+4. Usa los módulos de paquetería, accesos, gastos, mantenimientos y asambleas.
+5. En Copias y solicitudes, descarga un respaldo JSON después de trabajar.
+
+Los datos empiezan vacíos. Se guardan solo en ese navegador y dirección.
+Si el navegador impide guardar, el panel trabaja en memoria y muestra un aviso.
+No cierres la página sin descargar el respaldo. El modo privado puede borrar
+los datos al cerrar. Abrir el panel en otro equipo, origen o URL no comparte
+automáticamente los registros. Para moverlos, descarga y restaura un respaldo.
+
+PUBLICAR EN NETLIFY
+1. Descomprime el ZIP individual.
+2. Identifica la carpeta que tiene index.html, herramientas.html y assets.
+3. Entra en Netlify Drop: https://app.netlify.com/drop
+4. Arrastra esa carpeta completa. No se necesita instalación ni compilación.
+5. Abre la URL resultante y recorre Inicio, Funciones, Panel y Residentes.
+6. Si ya trabajaste en otra dirección, restaura tu respaldo en la nueva URL.
+
+Si conectas esta carpeta a un repositorio, deja el comando de build vacío y
+la carpeta de publicación en el directorio que contiene index.html.
+netlify.toml incluye publish = "." para una carpeta desplegada por separado.
+No publiques la carpeta de la colección si quieres un sitio independiente.
+
+ACTUALIZACIÓN DE RESIDENTES
+En Viviendas, abre el formulario de la unidad. En una URL https puedes copiar
+el enlace y compartirlo tú. El enlace no es privado ni autentica al residente.
+No contiene su nombre, teléfono o correo; sí el contexto de la vivienda y
+el correo del administrador para preparar un mensaje opcional.
+El residente completa los datos y descarga una solicitud JSON. Debe enviarla
+por el canal acordado. El correo preparado NO adjunta archivos automáticamente.
+El administrador revisa el remitente, importa la solicitud y confirma los
+cambios. No hay envío automático, lectura de correos ni sincronización.
+
+ALCANCE
+Esta es una aplicación local de gestión y una base de trabajo para el proyecto.
+Los estados de aprobación/licencia son registros; no protegen el acceso.
+No hay autenticación, cobro de licencias, cuentas multiusuario ni servidor.
+Las votaciones son conteos internos manuales, una respuesta por vivienda;
+no comprueban identidad, representación, quórum ni validez legal.
+El coeficiente de vivienda se guarda como dato y no pondera los resultados.
+No se incluyen usuarios, testimonios, copropiedades ni datos ficticios cargados.
+
+PARA CONVERTIRLO EN SERVICIO MULTIUSUARIO
+Lee IMPLEMENTACION_MULTIUSUARIO.md. Incluye cinco fases, permisos, modelo de
+datos propuesto, fuentes oficiales y pruebas para conectar autenticación,
+base de datos, licencias y participación remota de residentes.
+No guardes claves privilegiadas en HTML, JavaScript ni configuracion.js.
+
+ARCHIVOS PRINCIPALES
+index.html: presentación del proyecto.
+servicios.html: funciones, pasos y alcance.
+herramientas.html: espacio de gestión local.
+residentes.html: solicitud de actualización para revisión manual.
+contacto.html: contacto con Julio y preparación de consulta por correo.
+assets/store.js: validación, registros y respaldos.
+assets/workspace.js: interacción del panel.
+assets/residentes.js: formulario y descarga de solicitudes.
+configuracion.js: dos enlaces externos opcionales de formulario/agenda.
+
+EDICIÓN Y APRENDIZAJE
+Para cambiar textos edita el HTML correspondiente. Conserva las etiquetas y
+los identificadores de los formularios. Las tipografías y la ilustración son
+locales, no dependen de servicios externos. Antes de cambiar código haz una
+copia de la carpeta y descarga un respaldo de tus datos.
+Para practicar con IA usa datos ficticios y tareas pequeñas; verifica cada
+cambio contra un flujo completo antes de usarlo con información real.
+
+Recursos y créditos: RECURSOS.txt. Validaciones: REVISION_TECNICA.txt.

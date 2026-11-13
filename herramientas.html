@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organiza copropiedades, viviendas, paquetería, accesos y tareas con Conjunto PH, el proyecto de Julio Valencia. Herramienta de datos locales.">
+  <meta name="theme-color" content="#102b46">
+  <title>Panel de gestión · Conjunto PH</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/workspace.css">
+  <script defer src="assets/store.js"></script>
+  <script defer src="assets/workspace.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al panel</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación del panel">
+      <a class="workspace-brand" href="index.html" aria-label="Conjunto PH, página principal">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 33V11l12-6 12 6v22M14 33V17h12v16M20 17v16M8 23h24" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M5 33h30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+        <span>Conjunto <strong>PH</strong><small>GESTIÓN DE COPROPIEDADES</small></span>
+      </a>
+      <div class="sidebar-heading"><span>Tu espacio de trabajo</span><button class="mobile-menu-close icon-button" id="menu-close" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <nav class="module-nav" aria-label="Módulos">
+        <button class="nav-item active" type="button" id="resumen" data-view="overview" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg><span>Resumen</span></button>
+        <button class="nav-item" type="button" id="copropiedades" data-view="properties"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5l7-3 7 3v16M3 21h18M9 8h1m4 0h1M9 12h1m4 0h1M10 21v-5h4v5"/></svg><span>Copropiedades<small>Registro y licencias</small></span></button>
+        <span class="nav-label">Operación diaria</span>
+        <button class="nav-item" type="button" id="viviendas" data-view="units"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7h6v7"/></svg><span>Viviendas y residentes</span></button>
+        <button class="nav-item" type="button" id="paqueteria" data-view="parcels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 7 9-4 9 4v11l-9 4-9-4V7Zm0 0 9 4 9-4M12 11v11M7 5l10 4"/></svg><span>Paquetería</span></button>
+        <button class="nav-item" type="button" id="accesos" data-view="accesses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v16h-6M3 12h12m-4-4 4 4-4 4"/></svg><span>Accesos</span></button>
+        <button class="nav-item" type="button" id="gastos" data-view="expenses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18l-3-2-4 2-4-2-3 2V3Zm4 5h6M9 12h6M9 16h2"/></svg><span>Gastos</span></button>
+        <button class="nav-item" type="button" id="mantenimiento" data-view="maintenance"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5a5 5 0 0 0-6 6l-5 5a2.8 2.8 0 0 0 4 4l5-5a5 5 0 0 0 7-6l-4 3-3-3 2-4Z"/></svg><span>Mantenimiento</span></button>
+        <button class="nav-item" type="button" id="asambleas" data-view="assemblies"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18v11H3V10Zm4 0 5-7 5 7M9 15l2 2 4-4"/></svg><span>Asambleas</span></button>
+        <span class="nav-label">Continuidad</span>
+        <button class="nav-item" type="button" id="copias" data-view="backups"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v15H4V6Zm4-3h8M12 10v7m-3-3 3 3 3-3"/></svg><span>Copias y solicitudes</span></button>
+      </nav>
+      <div class="sidebar-bottom"><span class="project-avatar" aria-hidden="true">JV</span><div><strong>Proyecto de Julio Valencia</strong><span>Conjunto PH · Colombia</span></div></div>
+      <a class="sidebar-help" href="servicios.html#alcance">Conoce el alcance de esta versión <span aria-hidden="true">↗</span></a>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-start"><button class="mobile-menu-toggle icon-button" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div class="property-switch"><label for="property-select">Copropiedad activa</label><select id="property-select"><option value="">Todavía no hay conjuntos</option></select></div></div>
+        <a class="local-mode" href="servicios.html#alcance"><span class="status-dot" aria-hidden="true"></span><span>Datos en este navegador</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg></a>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="storage-notice" id="storage-notice" role="alert" hidden><div><strong>Guarda una copia antes de salir.</strong><p id="storage-message"></p></div><button type="button" class="button small secondary" id="storage-backup">Descargar copia</button></div>
+        <div class="page-heading"><div><p class="eyebrow" id="view-eyebrow">PANEL DE GESTIÓN</p><h1 id="view-title">Resumen</h1><p class="page-description" id="view-description">Un lugar para organizar el día a día de tu conjunto.</p></div><a class="public-link" href="index.html">Ver el proyecto <span aria-hidden="true">↗</span></a></div>
+        <div class="notice" id="notice" role="alert" tabindex="-1" hidden><p id="notice-text"></p><button class="icon-button" id="notice-close" type="button" aria-label="Cerrar aviso"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+        <div id="module-content" aria-live="off"><section class="welcome-panel"><div><p class="eyebrow">TODO COMIENZA CON TU CONJUNTO</p><h2>Menos pendientes.<br>Más claridad.</h2><p>El panel está preparando tu espacio de trabajo.</p></div></section></div>
+        <noscript><div class="notice">Activa JavaScript para utilizar el panel de gestión. Puedes conocer el proyecto y su alcance en la <a href="servicios.html">página de servicios</a>.</div></noscript>
+        <footer class="workspace-footer"><span>Conjunto PH <span aria-hidden="true">/</span> Proyecto de Julio Valencia</span><a href="servicios.html#alcance">Cómo se guardan tus datos</a></footer>
+      </main>
+    </div>
+  </div>
+
+  <dialog class="app-dialog editor-dialog" id="editor-dialog" aria-labelledby="editor-title" aria-describedby="editor-description">
+    <form id="editor-form">
+      <div class="dialog-heading"><div><p class="eyebrow" id="editor-eyebrow">NUEVO REGISTRO</p><h2 id="editor-title">Registrar</h2></div><button type="button" class="icon-button" data-close="editor-dialog" aria-label="Cerrar formulario"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <p class="dialog-description" id="editor-description"></p>
+      <div class="dialog-error" id="editor-error" role="alert" tabindex="-1" hidden></div>
+      <div class="form-grid" id="editor-fields"></div>
+      <div class="dialog-actions"><button type="button" class="button secondary" data-close="editor-dialog">Cancelar</button><button type="submit" class="button" id="editor-submit">Guardar registro</button></div>
+    </form>
+  </dialog>
+
+  <dialog class="app-dialog confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message">
+    <form id="confirm-form"><p class="eyebrow">CONFIRMACIÓN</p><h2 id="confirm-title">Revisar acción</h2><p class="dialog-description" id="confirm-message"></p><div class="dialog-error" id="confirm-error" role="alert" tabindex="-1" hidden></div><div class="dialog-actions"><button type="button" class="button secondary" data-close="confirm-dialog">Cancelar</button><button type="submit" class="button" id="confirm-submit">Confirmar</button></div></form>
+  </dialog>
+
+  <dialog class="app-dialog" id="resident-dialog" aria-labelledby="resident-title" aria-describedby="resident-description">
+    <div class="dialog-heading"><div><p class="eyebrow">ACTUALIZACIÓN DE DATOS</p><h2 id="resident-title">Formulario del residente</h2></div><button type="button" class="icon-button" data-close="resident-dialog" aria-label="Cerrar enlace"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+    <p class="dialog-description" id="resident-description">El residente completa sus datos y descarga una solicitud. Después, la administración revisa el archivo antes de aplicarlo al registro.</p>
+    <div class="inline-note">Este enlace abre un formulario público. La identidad del remitente se comprueba de forma manual.</div>
+    <div class="field"><label for="resident-link">Enlace al formulario</label><input id="resident-link" type="text" readonly spellcheck="false"><p class="field-help" id="resident-link-help"></p></div>
+    <div class="dialog-actions"><button class="button secondary" type="button" id="copy-resident-link">Copiar enlace</button><a class="button" id="open-resident-link" href="residentes.html" target="_blank" rel="noopener">Abrir formulario <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>

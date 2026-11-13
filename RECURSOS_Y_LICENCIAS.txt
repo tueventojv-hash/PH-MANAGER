@@ -1,0 +1,17 @@
+CONJUNTO PH · RECURSOS Y CRÉDITOS
+
+Proyecto preparado a partir del formulario de Julio Alejandro Valencia Garcia.
+Contacto proporcionado: tueventojv@gmail.com. País: Colombia.
+Conjunto PH es el nombre descriptivo utilizado para esta entrega; no se afirma
+que sea una marca registrada ni una empresa ya constituida.
+
+Ilustración assets/editorial.png creada para este proyecto con generación de
+imagen. Representación conceptual de edificios; no fotografía de una propiedad
+real ni evidencia de clientes, obras o instalaciones de Julio.
+Iconos y marca gráfica: SVG/CSS incluidos localmente en la entrega.
+Fuentes: Noto Sans Display, Noto Sans y DejaVu Sans Mono en assets/fonts/.
+Los avisos y licencias originales se incluyen en esa misma carpeta.
+Sin librerías de interfaz, servicios de analítica ni recursos de carga remota.
+
+Las fuentes técnicas oficiales de la propuesta de backend se encuentran en
+IMPLEMENTACION_MULTIUSUARIO.md. Esa propuesta no está desplegada ni conectada.

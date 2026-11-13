@@ -1,0 +1,6 @@
+@font-face{font-family:'Site Display';src:url('fonts/display-400.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Site Display';src:url('fonts/display-700.woff') format('woff');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Site Text';src:url('fonts/text-400.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Site Text';src:url('fonts/text-700.woff') format('woff');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Site Mono';src:url('fonts/mono-400.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+:root{--font-head:'Site Display',Georgia,serif;--font-body:'Site Text',Arial,sans-serif;--font-mono:'Site Mono',monospace}

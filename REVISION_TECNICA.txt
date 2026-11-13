@@ -1,0 +1,43 @@
+CONJUNTO PH · REVISIÓN TÉCNICA DE LA ENTREGA
+Proyecto de Julio Alejandro Valencia Garcia · 12 de noviembre de 2026
+
+CONTENIDO
+Cinco páginas principales y una página 404.
+HTML, CSS y JavaScript sin instalación ni compilación.
+Tipografías, iconos e ilustración incluidos localmente.
+netlify.toml publica la raíz; _headers incluye cabeceras para la versión local.
+
+FUNCIONAMIENTO COMPROBADO
+26 pruebas del motor de datos, 18 pruebas del panel y 20 pruebas
+del portal de residentes: 64 pruebas funcionales aprobadas en total.
+
+Motor: CRUD, datos iniciales vacíos, referencias por copropiedad, fechas,
+importes exactos en centavos, votos únicos, cierres, exportación CSV,
+restauración atómica, solicitudes repetidas y fallo del almacenamiento local.
+Panel: creación/edición, nueve vistas, filtros, selección de copropiedad,
+estados, cálculos, accesos, asambleas, confirmaciones, revisión de copias,
+solicitudes, enlaces de residentes y avisos de persistencia.
+Portal: validación del enlace, campos, consentimiento, descarga del JSON,
+correo preparado sin adjunto automático e integración con el motor real.
+
+MÉTODO
+Se ejecutó el JavaScript entregado en Node VM con un DOM instrumentado.
+El panel se comprobó a partir de su HTML real. No se utilizó un navegador.
+Estas comprobaciones no sustituyen una prueba visual ni una validación de
+los mecanismos de descarga/correo en todos los navegadores y dispositivos.
+La previsualización local en navegador estaba restringida en este entorno.
+
+REVISIÓN ESTÁTICA
+La colección pasó la auditoría de referencias locales, recursos, etiquetas de
+campos, identificadores y relaciones ARIA; JavaScript con sintaxis válida.
+No se detectaron enlaces internos ni archivos necesarios faltantes.
+Se incluyeron reglas adaptativas, foco visible y movimiento reducido.
+No se cargan librerías, imágenes ni fuentes desde servidores externos.
+
+ALCANCE
+El panel guarda datos en este navegador. No hay base compartida, autenticación
+ni licencias impuestas por un servidor. El portal prepara archivos para revisión
+manual. El conteo de asambleas no acredita identidad, quórum ni validez legal.
+La guía IMPLEMENTACION_MULTIUSUARIO.md describe la siguiente fase; no se ha
+desplegado un backend ni ejecutado sus políticas de acceso.
+No se realizó un despliegue público de esta entrega.
